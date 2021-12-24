@@ -1,9 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerst</title>
 </head>
+<style>
+    .text {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: xx-large;
+        color: rgb(73, 70, 70);
+    }
+    .lucas-stinkt {
+        cursor: pointer;
+    }
+</style>
+<script>
+    var count = 3
+    var money = 0
+    function e1 () {
+        var e = document.getElementById ("marit")
+        var z = Math.floor(Math.random ()*7)
+        if (z == 3) {
+            e.innerHTML = "[Cadeau] Elias gaat iets kopen dat je wilt onder 15 euro!"
+            money = money + 15
+        }else {
+            e.innerHTML = "De cadeau is leeg." 
+        }
+        var f = document.getElementById ("f1")
+        f.remove ()
+        count--
+        alert ("Nadat je op \"OK\" drukt ga je zien wat erin zit! Je hebt nu: "+ count.toString() + " cadeau(s).")
+        if (count == 0) {
+            setTimeout(() => {e.innerHTML = "All cadeau's zijn op! Elias is moet je "+money.toString()+" geven!"},2000)
+        }
+    }
+    function e2 () {
+        var e = document.getElementById ("marit")
+        var z = Math.floor(Math.random ()*5)
+        if (z == 3) {
+            e.innerHTML = "[Cadeau] Elias gaat iets kopen dat je wilt onder 10 euro!"
+            money = money + 10
+        }else {
+            e.innerHTML = "De cadeau is er niet." 
+        }
+        var f = document.getElementById ("f2")
+        f.remove ()
+        count--
+        alert ("Nadat je op \"OK\" drukt ga je zien wat erin zit! Je hebt nu: "+ count.toString() + " cadeau(s).")
+        if (count == 0) {
+            setTimeout(() => {e.innerHTML = "All cadeau's zijn op! Elias is moet je "+money.toString()+" geven!"},2000)
+        }
+    }
+    function e3 () {
+        var e = document.getElementById ("marit")
+        var z = Math.floor(Math.random ()*4)
+        if (z == 3) {
+            e.innerHTML = "[Cadeau] Elias gaat iets kopen dat je wilt onder 5 euro!"
+            money = money + 5
+        }else {
+            e.innerHTML = "Nee! Niks zit erin!" 
+        }
+        var f = document.getElementById ("f3")
+        f.remove ()
+        count--
+        alert ("Nadat je op \"OK\" drukt ga je zien wat erin zit! Je hebt nu: "+ count.toString() + " cadeau(s).")
+        if (count == 0) {
+            setTimeout(() => {e.innerHTML = "All cadeau's zijn op! Elias is moet je een cadeau geven van: "+money.toString()+" euro!"},2000)
+        }
+    }
+</script>
 <body>
-    <script>window.location.href="home/"</script>
+    <form align="center">
+        <p class="text" id="marit">Klik op de cadeaus om te zien wat er in zit!</p>
+        <img src="gift.png" height="300px" width="300px" class="lucas-stinkt" id="f1" onclick="e1()">
+        <img src="gift.png" height="300px" width="300px" class="lucas-stinkt" id="f2" onclick="e2()">
+        <img src="gift.png" height="300px" width="300px" class="lucas-stinkt" id="f3" onclick="e3()">
+    </form>
 </body>
 </html>
