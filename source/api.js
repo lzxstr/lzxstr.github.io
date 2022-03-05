@@ -1,19 +1,17 @@
-function NotAva () {
-    alert ("Not available yet.");
-}
+// Links
 
 function krnl () {
     window.location = "https://krnl.ca";
 }
 
 function Download1 () {
-    window.location = "https://link-target.net/414440/roblox-beam-tool-download";
+	// Patched
 }
 
 function Download2 () {
-    window.location = "https://link-hub.net/414440/krnl-executor-download";
+    window.location = "https://k-storage.com/krnl_bootstrapper.exe";
 }
 
 function Download3 () {
-    window.location = "https://link-center.net/414440/roblox-fps-unlocker";
+    window.location = "https://github.com/axstin/rbxfpsunlocker/releases/download/v4.4.2/rbxfpsunlocker-x64.zip";
 }
