@@ -1,1 +1,1 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/psx'))()
+<script>window.location.href="https://www.youtube.com/channel/UCo14ukeZaHs8XqS7ImX3Tew"</script>
